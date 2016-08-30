@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SHScroller_Example' do
+  pod 'SHScroller', :path => '../'
+
+  target 'SHScroller_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
