@@ -1,9 +1,9 @@
 {
   "name": "SHScroller",
   "version": "0.1.0",
-  "summary": "A short description of SHScroller.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SHScroller",
+  "summary": "Secret Scroller for TabViewController",
+  "description": "You can change tabs vertically with a secret scroller.",
+  "homepage": "https://github.com/sh0mi/SHScroller",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "Sho Miyamoto": "laveritefigaro+cocoa@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SHScroller.git",
+    "git": "https://github.com/sh0mi/SHScroller.git",
     "tag": "0.1.0"
   },
   "platforms": {
