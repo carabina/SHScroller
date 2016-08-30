@@ -1,0 +1,6 @@
+framework module SHScroller {
+  umbrella header "SHScroller-umbrella.h"
+
+  export *
+  module * { export * }
+}

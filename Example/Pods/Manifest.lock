@@ -1,0 +1,23 @@
+PODS:
+  - FBSnapshotTestCase (2.1.2):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
+  - FBSnapshotTestCase/Core (2.1.2)
+  - FBSnapshotTestCase/SwiftSupport (2.1.2):
+    - FBSnapshotTestCase/Core
+  - SHScroller (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - SHScroller (from `../`)
+
+EXTERNAL SOURCES:
+  SHScroller:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  SHScroller: 6fec0a55260710656e6941d05818f86530d1a75f
+
+PODFILE CHECKSUM: e8d089872b05ed1c9406a86700b2c6190e3fcfd2
+
+COCOAPODS: 1.0.1
