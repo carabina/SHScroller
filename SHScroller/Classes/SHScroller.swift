@@ -23,7 +23,7 @@ public class SHScroller: UIControl {
     private var current: Int = 0
 
     //MARK: Delta property takes either 1 or -1
-    private(set) var delta: Int = 0
+    public private(set) var delta: Int = 0
 
 
     public init(superView: UIView, division: Int = 10, inset: CGFloat = 15) {
