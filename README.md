@@ -11,7 +11,9 @@ Sho Miyamoto
 ## Description
 
 **Have you ever thought that you are reluctant to reach out your thumb to change tabs or navigations etc.**
+
 **If so, your users think alike.**
+
 This totally **simple** library provides another secret scroll bar to do it without stretching fingers.
 
 
@@ -91,9 +93,9 @@ self.view.addSubview(scroller)
 
 ## Comments
 
-This is the first time to make OSS, and I started Python this April as the first programming language.
+This is the first time to make OSS, and I started **Python** **this April** as the first programming language.
 Though this is so simple library, it was very good experience for me.
-Please give me any hints, advices, corrections about anything, thank you.
+Please give me any **hints, advices, corrections** about anything, thank you.
 
 
 ## License
