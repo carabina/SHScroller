@@ -45,23 +45,48 @@ pod "SHScroller"
 
 
 ## Usage
+### Initializing
+In your `func viewDidLoad()` of `ViewController`, add some lines below.
 
-In your `ViewController`, add some lines below.
-
-Initialize SHScroller
+At first initialize SHScroller.
 ```swift
 let scroller = SHScroller(superView: self.view)
 
 self.view.addSubview(scroller)
 ```
 
-You can also designate division number and inset like this
+### Setting a target function triggered by scrolling
+Also in `func viewDidLoad()`, add this line.
 ```swift
-let scroller = SHScroller(superView: self.view, division: 15, inset: 20)
+scroller.addTarget(self, action: #selector(ViewController.changed), forControlEvents: .ValueChanged)
+```
+And replace the content of `#selector()` with your function.
+
+
+### Triggered function
+Make associated function designated by `.addTarget()`.
+```swift
+func changed(scroller: SHScroller) {
+    // e.g.
+    self.selectedIndex += scroller.delta
+}
+```
+You can access only this property named delta, which can only be read.
+Delta takes either 1 (swiping downward) or -1 (upward).
+
+
+The setup is finished.
+
+
+### Customizing
+In initializing, you can also designate `sensitivity` number and `range` like this.
+- `sensitivity` represents the sensitivity of changes, which is actually how many hit fields will divided into. The default value is `10`.
+- `range` is the horizontally range of hit areas. I recommend you keep the default value `15` or so.
+
+```swift
+let scroller = SHScroller(superView: self.view, sensitivity: 15, range: 20)
 
 self.view.addSubview(scroller)
-
-
 ```
 
 ## License
