@@ -80,11 +80,11 @@ The setup is finished.
 
 ### Customizing
 In initializing, you can also designate `sensitivity` number and `range` like this.
-- `sensitivity` represents the sensitivity of changes, which is actually how many hit fields will divided into. The default value is `10`.
-- `range` is the horizontally range of hit areas. I recommend you keep the default value `15` or so.
+- `sensitivity: Int` represents the sensitivity of changes, which is actually how many hit fields will divided into. The default value is `10`.
+- `range: CGFloat` is the horizontally range of hit areas. In the respect of the balance between less influence to super view and the performance, I recommend you keep the default value `15.0` or so.
 
 ```swift
-let scroller = SHScroller(superView: self.view, sensitivity: 15, range: 20)
+let scroller = SHScroller(superView: self.view, sensitivity: 15, range: 20.0)
 
 self.view.addSubview(scroller)
 ```
