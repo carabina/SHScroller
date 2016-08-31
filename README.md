@@ -16,8 +16,9 @@ Sho Miyamoto
 
 This totally **simple** library provides another secret scroll bar to do it without stretching fingers.
 
+***
 
-Concretely, this is an invisible view(`UIControl`) on the far right edge.
+Concretely, this is an invisible view (`UIControl`) on the far right edge.
 When users scroll or swipe along the right edge, you can implement a function triggered by users' swiping.
 
 
