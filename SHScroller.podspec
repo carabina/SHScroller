@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SHScroller'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'Secret Scroller for TabViewController'
 
 # This description is used to generate tags and improve search results.
