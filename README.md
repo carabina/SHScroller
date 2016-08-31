@@ -10,9 +10,9 @@ Sho Miyamoto
 
 ## Description
 
-Have you ever thought that you are reluctant to reach out your thumb to change tabs or navigations etc.
-If so, your users think alike.
-This totally simple library provides another secret scroll bar to do it without any stretching fingers.
+**Have you ever thought that you are reluctant to reach out your thumb to change tabs or navigations etc.**
+**If so, your users think alike.**
+This totally **simple** library provides another secret scroll bar to do it without stretching fingers.
 
 
 Concretely, this is an invisible view(`UIControl`) on the far right edge.
@@ -46,9 +46,9 @@ pod "SHScroller"
 
 ## Usage
 ### Initializing
-In your `func viewDidLoad()` of `ViewController`, add some lines below.
-
 At first initialize SHScroller.
+
+In your `func viewDidLoad()` of `ViewController`, add some lines below.
 ```swift
 let scroller = SHScroller(superView: self.view)
 
@@ -80,14 +80,21 @@ The setup is finished.
 
 ### Customizing
 In initializing, you can also designate `sensitivity` number and `range` like this.
-- `sensitivity: Int` represents the sensitivity of changes, which is actually how many hit fields will divided into. The default value is `10`.
-- `range: CGFloat` is the horizontally range of hit areas. In the respect of the balance between less influence to super view and the performance, I recommend you keep the default value `15.0` or so.
+- `sensitivity: Int` represents the sensitivity of swiping, which is actually how many hit fields will be divided into. The default value is `10`.
+- `range: CGFloat` is the horizontally range of hit areas. In the respect of the balance between the performance and less influence to super view, I recommend you keep the default value `15.0` or so.
 
 ```swift
 let scroller = SHScroller(superView: self.view, sensitivity: 15, range: 20.0)
 
 self.view.addSubview(scroller)
 ```
+
+## Comments
+
+This is the first time to make OSS, and I started Python this April as the first programming language.
+Though this is so simple library, it was very good experience for me.
+Please give me any hints, advices, corrections about anything, thank you.
+
 
 ## License
 
