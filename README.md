@@ -49,14 +49,14 @@ pod "SHScroller"
 In your `ViewController`, add some lines below.
 
 Initialize SHScroller
-```swift:ViewController.swift
+```swift
 let scroller = SHScroller(superView: self.view)
 
 self.view.addSubview(scroller)
 ```
 
 You can also designate division number and inset like this
-```swift:ViewController.swift
+```swift
 let scroller = SHScroller(superView: self.view, division: 15, inset: 20)
 
 self.view.addSubview(scroller)
