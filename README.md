@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/SHScroller.svg?style=flat)](http://cocoapods.org/pods/SHScroller)
 [![Platform](https://img.shields.io/cocoapods/p/SHScroller.svg?style=flat)](http://cocoapods.org/pods/SHScroller)
 
+## Author
+Sho Miyamoto
+
 ## Description
 
 Have you ever thought that you are reluctant to reach out your thumb to change tabs or navigations etc.
@@ -28,8 +31,8 @@ On the Github, there is a demo project, in which a UITabBarController is used as
 
 ## Requirements
 
-Swift 2.2
-Xcode 7.3
+- Swift 2.2
+- Xcode 7.3
 
 ## Installation
 
@@ -40,9 +43,22 @@ it, simply add the following line to your Podfile:
 pod "SHScroller"
 ```
 
-## Author
 
-Sho Miyamoto
+## Usage
+
+```ViewController.Swift
+//MARK: Initialize SHScroller
+let scroller = SHScroller(superView: self.view)
+
+//MARK: You can also designate division number and inset like this
+let scroller = SHScroller(superView: self.view, division: 15, inset: 20)
+
+self.view.addSubview(scroller)
+```
+
+```ViewController.Swift
+
+```
 
 ## License
 
